@@ -2,6 +2,7 @@ import React,{useState} from 'react'
 import { IoIosArrowDown } from "react-icons/io";
 import { FaBars } from "react-icons/fa";
 import { FaTimes } from "react-icons/fa";
+import SellButton from "../components/JoinButton";
 
 const NavBar = () => {
 
@@ -28,6 +29,8 @@ const NavBar = () => {
 
   ]
 
+ 
+
   return (
     <div className='h-[80px] w-full bg-blue-800 flex items-center justify-between px-3 pr-5'>
       <div className='px-2 w-[150px] lg:w-[300px] lg:px-6 text-white'>
@@ -52,15 +55,25 @@ const NavBar = () => {
       </div>
 
       { nav && (
-        <ul className='flex flex-col justify-evenly items-center absolute top-[55px] right-[-21px] h-[300px] w-[250px] duration-300 bg-blue-800 xl:hidden'>
+        <ul className='flex flex-col justify-evenly items-center absolute top-[55px] right-[-21px] h-[300px] w-[250px] duration-300 bg-blue-800 text-white text-xl xl:hidden'>
           {
           items.map(({item,id})=>(
-            <li key={id} className='h-[75px] w-full px-4 flex items-center justify-center gap-1 border'>{item} <IoIosArrowDown /> </li>
+            <li key={id} className='h-[75px] w-full px-4 flex items-center justify-center gap-1 border '>{item} <IoIosArrowDown /> </li>
           ))}
+
+
+          <li><SellButton ab={'w-[220px] h-[50px] rounded-full bg-white relative'}/></li>
+
+
         </ul>
       )}
 
     </nav>
+
+      <SellButton buttonStyle={"hidden xl:flex"}/>
+                  
+
+
     </div>
 
   )
