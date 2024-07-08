@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {},
     fontFamily:{
-      Vollkorn:["Vollkorn SC"]
+      Vollkorn:["Vollkorn SC"],
+      Montserrat:["Montserrat"]
     }
   },
   plugins: [],

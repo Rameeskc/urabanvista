@@ -1,5 +1,4 @@
 import React,{useState} from 'react'
-import { IoIosArrowDown } from "react-icons/io";
 import { FaBars } from "react-icons/fa";
 import { FaTimes } from "react-icons/fa";
 import SellButton from "../components/JoinButton";
@@ -9,25 +8,22 @@ const NavBar = () => {
   const [nav, setNav] = useState(false);
 
 
-  const items =[
-    {
-      id:1,
-      item:"Buy"
-    },
-    {
-      id:2,
-      item:"Rent"
-    },
-    {
-      id:3,
-      item:"Sell"
-    },
-    {
-      id:4,
-      item:"Help"
-    },
+  // const items =[
+  //   {
+  //     id:1,
+  //     item:"Buy"
+  //   },
+  //   {
+  //     id:2,
+  //     item:"Rent"
+  //   },
+  //   {
+  //     id:3,
+  //     item:"Help"
+  //   },
+    
 
-  ]
+  // ]
 
  
 
@@ -37,42 +33,46 @@ const NavBar = () => {
         <p className='text-3xl font-Vollkorn font-bold'>URBANVISTA</p>
       </div>
       
-      <ul className='hidden xl:flex  px-4 text-white'>
+      <ul className='hidden lg:flex  px-4 text-white font-Montserrat'>
 
-        {
-          items.map(({item,id})=>(
-            <li key={id} className=' px-4 flex items-center gap-1'>{item} <IoIosArrowDown /> </li>
-          )
-          )
-        }
+
+            <li className=' px-8 flex items-center gap-1 hover:text-lg hover:font-bold duration-500 cursor-pointer'>Buy</li>
+            <li className=' px-8 flex items-center gap-1 hover:text-lg hover:font-bold duration-500 cursor-pointer'>Rent</li>
+            <li className=' px-8 flex items-center gap-1 hover:text-lg hover:font-bold duration-500 cursor-pointer'>About Us</li>
+            <li className=' px-8 flex items-center gap-1 hover:text-lg hover:font-bold duration-500 cursor-pointer'>Login</li>
+          
       </ul>
-      <nav className='relative'>
+      <nav className='absolute right-6 lg:hidden'>
       <div
           onClick={()=> setNav(!nav)} 
-          className=' text-white xl:hidden'>
+          className=' text-white '>
           {nav? <FaTimes  size={30}/> :<FaBars size={30}/>}  
         
       </div>
 
       { nav && (
-        <ul className='flex flex-col justify-evenly items-center absolute top-[55px] right-[-21px] h-[300px] w-[250px] duration-300 bg-blue-800 text-white text-xl xl:hidden'>
-          {
-          items.map(({item,id})=>(
-            <li key={id} className='h-[75px] w-full px-4 flex items-center justify-center gap-1 border '>{item} <IoIosArrowDown /> </li>
-          ))}
+        <ul className='flex flex-col justify-evenly items-center absolute top-[56px] right-[-25px] h-auto w-[250px] duration-300 bg-blue-800 text-white text-xl '>
+          <li className='h-[75px] w-full px-4 flex items-center justify-center gap-1 border '>Buy</li>
+          <li className='h-[75px] w-full px-4 flex items-center justify-center gap-1 border '>Rent</li>
+          <li className='h-[75px] w-full px-4 flex items-center justify-center gap-1 border '>About Us</li>
+          <li className='h-[75px] w-full px-4 flex items-center justify-center gap-1 border '>Login</li>
 
-
-          <li><SellButton ab={'w-[220px] h-[50px] rounded-full bg-white relative'}/></li>
+          <li className='h-[75px] w-full px-4 flex items-center justify-center'>
+            <SellButton 
+             ab={'w-[230px] h-[45px] rounded-full bg-white relative '}
+             cd={'text-blue-800 absolute top-[9px] left-[10px] text-md'}
+             ef={'left-[141px] top-[5px] '}
+            />
+          </li>
 
 
         </ul>
       )}
 
     </nav>
-
-      <SellButton buttonStyle={"hidden xl:flex"}/>
-                  
-
+    
+    <SellButton buttonStyle={'hidden lg:flex'}/>
+ 
 
     </div>
 
