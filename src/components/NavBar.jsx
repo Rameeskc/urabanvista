@@ -51,7 +51,7 @@ const NavBar = () => {
       </div>
 
       { nav && (
-        <ul className='flex flex-col justify-evenly items-center absolute top-[56px] right-[-25px] h-auto w-[250px] duration-300 bg-blue-800 text-white text-xl '>
+        <ul className='flex flex-col justify-evenly items-center absolute top-[56px] right-[-25px] h-auto w-[250px] duration-300 bg-blue-800 text-white text-xl z-10 '>
           <li className='h-[75px] w-full px-4 flex items-center justify-center gap-1 border '>Buy</li>
           <li className='h-[75px] w-full px-4 flex items-center justify-center gap-1 border '>Rent</li>
           <li className='h-[75px] w-full px-4 flex items-center justify-center gap-1 border '>About Us</li>
@@ -60,7 +60,7 @@ const NavBar = () => {
           <li className='h-[75px] w-full px-4 flex items-center justify-center'>
             <SellButton 
              ab={'w-[230px] h-[45px] rounded-full bg-white relative '}
-             cd={'text-blue-800 absolute top-[9px] left-[10px] text-md'}
+             cd={'text-blue-800 absolute top-[9px] left-[11px] text-md'}
              ef={'left-[141px] top-[5px] '}
             />
           </li>
