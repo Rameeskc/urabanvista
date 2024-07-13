@@ -1,6 +1,8 @@
 import React from 'react'
 import SearchProperty from "../components/SearchProperty";
 import banner from "../assets/banner1.jpg"
+import ProductCard from "../components/ProductCard";
+
 
 const Home = () => {
   return (
@@ -14,6 +16,24 @@ const Home = () => {
 
     <div className=' flex justify-center'>
       <SearchProperty/>
+    </div>
+
+    <div className='flex items-center px-5 mt-20 font-Montserrat text-xl mb-10'>
+      <p>Latest</p>
+    </div>
+
+    <div className='px-2 mb-20 flex w-auto h-[250px] overflow-x-scroll scrollbar-none'>
+      <ProductCard/>
+      <ProductCard/>
+      <ProductCard/>
+      <ProductCard/>
+      <ProductCard/>
+      <ProductCard/>
+      <ProductCard/>
+      <ProductCard/>
+      <ProductCard/>
+      <ProductCard/>
+      <ProductCard/>
     </div>
     </>
 
