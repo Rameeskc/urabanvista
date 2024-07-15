@@ -6,7 +6,7 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 
 const ProductCard = () => {
   return (
-    <div className='min-w-[200px] h-[220px] rounded border p-2 relative mx-2'>
+    <div className='w-[200px] h-[220px] rounded border p-2 relative mx-2'>
         <div className='w-full h-[130px]'>
             <img src={banner} alt="" className='w-[200px] h-[130px] rounded-t'/>
         </div>
