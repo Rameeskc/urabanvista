@@ -13,13 +13,14 @@ const ProductDetails = () => {
     <>
     <div className='flex flex-col justify-center items-center w-full'>
 
-      <div className='w-[1100px] h-auto border-2 rounded-lg mt-10 font-Montserrat mb-6'>
+      <div className='w-full md:w-[1100px] h-auto md:border-2 rounded-lg mt-10 font-Montserrat mb-6'>
         <p className='py-2 px-5 text-xl font-semibold mt-5'>3bhk House</p>
         <p className='py-2 px-5 text-lg font-medium flex items-center gap-1'><MdCurrencyRupee />30 Lacks</p>
         <p className='py-2 px-5 text-md font-medium flex mb-5'>koduvally,kooduvally,calicut</p>
-        <div className='w-[1100px] h-[400px] flex'>
-
-          <div className='w-[400px] h-full border-t border-r flex items-center justify-center'>
+        
+        
+        <div className=' w-full md:w-[1100px] h-auto md:h-[400px] md:flex'>
+          <div className='w-full md:w-[400px] h-full md:border-t md:border-r flex items-center justify-center'>
             <div className='w-[300px] h-[300px]'>
               <img src={banner} alt=""  className=' w-full h-[200px] p-1'/>
               <div className=' w-full h-[100px] flex'>
@@ -30,16 +31,16 @@ const ProductDetails = () => {
             </div>
           </div>
 
-          <div className=' w-[700px] h-full border-t'>
-            <div className='w-[600px] h-[80px] bg-slate-200 mx-8 rounded-xl mt-4'>
-              <ul className='h-full w-full flex justify-between items-center px-4'>
-                <li className='flex items-center justify-center gap-1 border-r-2 px-4 border-gray-500 text-gray-600'><IoBed />3 Beds</li>
-                <li className='flex items-center justify-center gap-1 border-r-2 px-4 border-gray-500 text-gray-600'><FaBath />3 Baths</li>
-                <li className='flex items-center justify-center gap-1 border-r-2 px-4 border-gray-500 text-gray-600'><FaCar />2 Car Parking</li>
-                <li className='flex items-center justify-center gap-1 text-gray-600'><FaToiletPortable />Semi-Furnished</li>
+          <div className=' w-full md:w-[700px] h-full flex md:flex-col items-center justify-center md:border-t'>
+            <div className='w-[300px] md:w-[600px] h-[320px] md:h-[80px] flex items-center justify-center bg-slate-200 mx-8 rounded-xl mt-4'>
+              <ul className='h-full w-full flex flex-col md:flex-row justify-evenly md:justify-between items-start md:items-center px-4'>
+                <li className='flex items-center justify-center gap-1 md:border-r-2 px-4 border-gray-500 text-gray-600'><IoBed />3 Beds</li>
+                <li className='flex items-center justify-center gap-1 md:border-r-2 px-4 border-gray-500 text-gray-600'><FaBath />3 Baths</li>
+                <li className='flex items-center justify-center gap-1 md:border-r-2 px-4 border-gray-500 text-gray-600'><FaCar />2 Car Parking</li>
+                <li className='flex items-center justify-center gap-1 text-gray-600 px-4 md:px-0'><FaToiletPortable />Semi-Furnished</li>
               </ul>
             </div>
-            <div className='w-[700px] h-full flex'>
+            <div className='hidden md:flex w-[700px] h-full items-center justify-center '>
               <div className=' w-[200px] h-[300px] '>
                   <div className='w-[200px] h-[100px] ml-5 pt-8'>
                     <p className='text-sm'>Carpet Area</p>
@@ -88,64 +89,64 @@ const ProductDetails = () => {
         </div>
       </div>
 
-      <div className='w-[1100px] h-auto border-2 rounded-lg mt-10 font-Montserrat mb-6'>
+      <div className='w-full md:w-[1100px] h-auto md:border-2 rounded-lg mt-10 font-Montserrat mb-6'>
         <p className='p-4 text-2xl font-semibold mt-5'>More Details</p>
 
-        <div className='w-full flex pl-4 mt-8'>
+        <div className='w-full h-auto flex pl-4 mt-8'>
           <p className='w-[200px]'>Price Breakup</p>
-          <p className='font-semibold flex items-center'><MdCurrencyRupee />3 Cr | <MdCurrencyRupee />7,000</p>
+          <p className='font-semibold flex items-center w-[150px] md:w-[300px] h-auto break-words'><MdCurrencyRupee />3 Cr | <MdCurrencyRupee />7,000</p>
         </div>
         <div className='w-full flex pl-4 mt-8'>
           <p className='w-[200px]'>Booking Amount</p>
-          <p className='font-semibold flex items-center'><MdCurrencyRupee /> 1</p>
+          <p className='font-semibold flex items-center w-[150px] md:w-[300px] h-auto break-words'><MdCurrencyRupee /> 1</p>
         </div>
-        <div className='w-full flex pl-4 mt-8'>
-          <p className='w-[200px]'>Address</p>
-          <p className='font-semibold'>abcd</p>
+        <div className='w-full flex pl-4 mt-8 h-auto'>
+          <p className='w-[200px] '>Address</p>
+          <p className='font-semibold w-[150px] md:w-[300px] h-auto break-words'>koduvally, claicut, kerala</p>
         </div>
         <div className='w-full flex pl-4 mt-8'>
           <p className='w-[200px]'>Landmarks</p>
-          <p className='font-semibold'>ramees</p>
+          <p className='font-semibold w-[150px] md:w-[300px] h-auto break-words'>ramees</p>
         </div>
         <div className='w-full flex pl-4 mt-8'>
           <p className='w-[200px]'>Furnishing</p>
-          <p className='font-semibold'>ramees</p>
+          <p className='font-semibold w-[150px] md:w-[300px] h-auto break-words'>ramees</p>
         </div>
         <div className='w-full flex pl-4 mt-8'>
           <p className='w-[200px]'>Flooring</p>
-          <p className='font-semibold'>ramees</p>
+          <p className='font-semibold w-[150px] md:w-[300px] h-auto break-words'>ramees</p>
         </div>
         <div className='w-full flex pl-4 mt-8'>
           <p className='w-[200px]'>Type of Ownership</p>
-          <p className='font-semibold'>ramees</p>
+          <p className='font-semibold w-[150px] md:w-[300px] h-auto break-words'>ramees</p>
         </div>
         <div className='w-full flex pl-4 mt-8'>
           <p className='w-[200px]'>Overlooking</p>
-          <p className='font-semibold'>Main Road</p>
+          <p className='font-semibold w-[150px] md:w-[300px] h-auto break-words'>Main Road</p>
         </div>
         <div className='w-full flex pl-4 mt-8'>
           <p className='w-[200px]'>Age of Construction</p>
-          <p className='font-semibold'>5 to 10 years</p>
+          <p className='font-semibold w-[150px] md:w-[300px] h-auto break-words'>5 to 10 years</p>
         </div>
-        <div className='w-full flex pl-4 mt-8'>
+        <div className='w-full flex pl-4 mt-8 h-auto'>
           <p className='w-[200px]'>Additional Rooms</p>
-          <p className='font-semibold'>Puja Room</p>
+          <p className='font-semibold w-[150px] md:w-auto h-auto break-words'>Pooja Room</p>
         </div>
         <div className='w-full flex pl-4 mt-8'>
           <p className='w-[200px]'>Water Availability</p>
-          <p className='font-semibold'>24 Hours Available</p>
+          <p className='font-semibold w-[150px] md:w-[300px] h-auto break-words'>24 Hours Available</p>
         </div>
         <div className='w-full flex pl-4 mt-8 mb-8'>
           <p className='w-[200px]'>Status of Electricity</p>
-          <p className='font-semibold'>No/Rare Powercut</p>
+          <p className='font-semibold w-[150px] md:w-[300px] h-auto break-words'>No/Rare Powercut</p>
         </div>
         <div className='w-full flex pl-4 mt-8 mb-8'>
           <p className='w-[200px]'>Lift</p>
-          <p className='font-semibold'>3</p>
+          <p className='font-semibold w-[150px] md:w-[300px] h-auto break-words'>3</p>
         </div>
         <div className='w-full flex pl-4 mt-8 mb-8'>
           <p className='w-[200px]'>Authority Approval</p>
-          <p className='font-semibold'>City Municipal Corporation</p>
+          <p className='font-semibold w-[150px] md:w-[300px] h-auto break-words'>City Municipal Corporation</p>
         </div>
 
       </div>
