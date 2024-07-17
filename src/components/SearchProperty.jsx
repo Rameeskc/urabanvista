@@ -14,7 +14,7 @@ const SearchProperty = () => {
             address:"",
             option:"",
             price:""
-        }}
+        }}backgroundImage
         onSubmit={onsubmit}
         >
             <Form className='flex flex-col md:flex-row'>

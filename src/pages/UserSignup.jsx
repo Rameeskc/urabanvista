@@ -5,15 +5,17 @@ import Button from "../components/Button";
  
 const UserSignup = () => {
   return (
-    <div className='h-screen w-screen flex justify-center items-center'>
-        <div className='w-full md:w-2/3 h-[550px] flex border-2'>
-            <div className='hidden md:flex w-[50%] h-full'>
+ 
+    <div className=' relative h-screen w-screen flex justify-center items-center'>   
+      <div className='absolute top-0 w-full h-full lg:hidden' style={{ backgroundImage: `url(${SignupImage})` }} />
+        <div className='absolute w-full md:w-2/3 h-[550px] flex border-2 bg-white lg:bg-gradient-to-l from-gray-400 ...'>
+            <div className='hidden lg:flex w-[50%] h-full'>
               <img src={SignupImage} alt="" className='w-full h-full rounded-tr-3xl rounded-br-3xl'/>
             </div>
 
 
             <div 
-              className=' w-full md:w-[50%] h-full'
+              className=' w-full lg:w-[50%] h-full'
             >
               <div className='h-[120px] w-full flex items-center justify-center mt-8'>
                 <p className='text-3xl font-bold font-uniquifier'>Sign Up</p>
