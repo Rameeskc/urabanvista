@@ -49,7 +49,10 @@ const SearchProperty = () => {
           </div>
 
 
-            <Button style={'mt-6 md:mt-0 md:ml-4 md:px-8'} />
+            <Button 
+              style={'mt-6 md:mt-0 md:ml-4 md:px-8'} 
+              value={"Search"}
+            />
             </Form>
 
         </Formik>

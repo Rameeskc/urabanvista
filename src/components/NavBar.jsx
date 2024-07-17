@@ -30,7 +30,7 @@ const NavBar = () => {
   return (
     <div className='h-[80px] w-full bg-blue-800 flex items-center justify-between px-3 pr-5'>
       <div className='px-2 w-[150px] lg:w-[300px] lg:px-6 text-white'>
-        <p className='text-3xl font-Vollkorn font-bold'>URBANVISTA</p>
+        <p className='text-3xl font-uniquifier font-bold'>URBANVISTA</p>
       </div>
       
       <ul className='hidden lg:flex  px-4 text-white font-Montserrat'>

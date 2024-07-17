@@ -6,6 +6,7 @@ export default {
   ],
   theme: {
     extend: {
+      
       keyframes: {
         bounce: {
           '0%, 100%': { transform: 'translateX(-10%)' },
@@ -18,7 +19,8 @@ export default {
     },
     fontFamily:{
       Vollkorn:["Vollkorn SC"],
-      Montserrat:["Montserrat"]
+      Montserrat:["Montserrat"],
+      uniquifier:["Dancing Script"]
     }
   },
   plugins: [require('tailwind-scrollbar'),],
