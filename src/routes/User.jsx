@@ -2,6 +2,7 @@ import React from 'react'
 import { Route,Routes } from "react-router-dom";
 import UserLayout from "../Layout/UserLayout";
 import Home from "../pages/Home"
+import AddProperty from "../pages/AddProperty";
 import ProductDetails from "../pages/ProductDetails";
 import UserLogin from "../pages/UserLogin";
 import UserSignup from '../pages/UserSignup';
@@ -16,6 +17,7 @@ const User = () => {
 
         <Route path="/" element={<Home/>}/>
         <Route path="/ProductDetails" element={<ProductDetails/>}/>
+        <Route path="/AddProperty" element={<AddProperty/>}/>
         
         </Route>
     </Routes>

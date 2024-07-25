@@ -58,7 +58,7 @@ const ProductDetails = () => {
               </div>
               <div className=' w-[200px] h-[300px] '>
                   <div className='w-[200px] h-[100px] ml-5 pt-8'>
-                    <p className='text-sm'>Transaction Type</p>
+                    <p className='text-sm'>Phone Number</p>
                     <p className='text-sm font-semibold'>Resale </p>
                   </div>
                   <div className='w-[200px] h-[70px] ml-5 '>
