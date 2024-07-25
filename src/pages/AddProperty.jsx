@@ -151,9 +151,9 @@ const AddProperty = () => {
                                     
                                 </Field>
                             </div>
-                            <div className='flex w-[330px] mt-4 h-[24px]'>
-                                <label htmlFor="autority approvel">Autority Approvel :</label>
-                                <Field type="file" name="autority-approvel" className="w-[120px]"/>
+                            <div className='flex w-[330px] mt-4'>
+                                <label htmlFor="image">Image :</label>
+                                <Field type="file" name="image" className="w-[120px] h-[24px]"/>
                             </div>
                         </div>
                     </Form>
